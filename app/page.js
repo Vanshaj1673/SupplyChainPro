@@ -18,6 +18,15 @@ import {
   Clock,
   DollarSign
 } from 'lucide-react';
+// Import all the section components (these will be created next)
+import { Sidebar } from '@/components/layout/sidebar';
+import { Header } from '@/components/layout/header';
+import { DashboardOverview } from '@/components/dashboard/dashboard-overview';
+import { WarehouseSection } from '@/components/warehouse/warehouse-section';
+import { DeliverySection } from '@/components/delivery/delivery-section';
+import { InventorySection } from '@/components/inventory/inventory-section';
+import { SuppliersSection } from '@/components/suppliers/suppliers-section';
+import { AnalyticsSection } from '@/components/analytics/analytics-section';
 
 export default function HomePage() {
   const [showDashboard, setShowDashboard] = useState(false);
@@ -344,12 +353,3 @@ function DashboardApp() {
   );
 }
 
-// Import all the section components (these will be created next)
-import { Sidebar } from '@/components/layout/sidebar';
-import { Header } from '@/components/layout/header';
-import { DashboardOverview } from '@/components/dashboard/dashboard-overview';
-import { WarehouseSection } from '@/components/warehouse/warehouse-section';
-import { DeliverySection } from '@/components/delivery/delivery-section';
-import { InventorySection } from '@/components/inventory/inventory-section';
-import { SuppliersSection } from '@/components/suppliers/suppliers-section';
-import { AnalyticsSection } from '@/components/analytics/analytics-section';
